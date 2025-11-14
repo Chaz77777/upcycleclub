@@ -385,3 +385,7 @@ hr {
   font-style: normal;
   font-weight: 500;
 }
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%; !important;
+}
