@@ -6,12 +6,31 @@ Experiment with colors, typography, spacing, and component styles.
 
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+/* ===============================================================
+  🤖 **COPILOT INSTRUCTIONS FOR custom.css** 🤖
+  ================================================================
+  
+  - **🚫 CRITICAL RULE: DO NOT EDIT `framework.css`.** - **✅ ALL new CSS styles, overrides, and design customizations go HERE in this file.**
+  
+  ---
+  
+  **KEY ASSETS:**
+  
+  1.  **Colors:** Use CSS Variables like `var(--primary-100)`, `var(--white)`, and `var(--grey)`.
+  2.  **Spacing:** Use CSS Variables like `var(--spacing8x3)` or `var(--spacing8x8)` for consistent measurements.
+  3.  **Layout:** Build upon the existing `grid` system classes (e.g., `.mobi1`, `.tab3`, `.desk4`).
+  
+  Always ask user for preferences instead of making assumptions!
+  
+*/
+
+
 /* ==========================================================================
    DESIGN SYSTEM - CUSTOMIZE YOUR COLORS & BRAND
    ========================================================================== */
 
 :root {
-  --primary-100: #3A4E6A;
+  --primary-100: #000000;
   --primary-80: #486284;
   --primary-50: #9CB0C9;
   --primary-25: #CED7E4;
@@ -37,7 +56,7 @@ body {
 /* Heading Styles - Customize sizes, colors, spacing */
 h1, h2, h3, h4, h5, h6 { 
   line-height: 1.1;
-  color: var(--primary-80);
+  color: #000000;
   /* Add your custom heading styles here */
 }
 
@@ -183,13 +202,13 @@ header nav a.active {
 
 #hero-image h1 {
   text-align: center;
-  color: var(--white);
+  color: #000000;
   margin: 0; 
 
 }
 
 #hero-image p {
-  color: var(--white);
+  color: 000000;
   margin: 0; 
 }
 
