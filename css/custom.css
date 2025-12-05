@@ -55,6 +55,7 @@ Experiment with colors, typography, spacing, and component styles.
 
 body {
   color: var(--primary-80);
+  
   /* font-family is set in framework.css but you can override it here if needed */
 }
 
@@ -62,6 +63,8 @@ body {
 h1, h2, h3, h4, h5, h6 { 
   line-height: 1.1;
   color: #000000;
+  
+  
   /* Add your custom heading styles here */
 }
 
@@ -74,10 +77,31 @@ h2 {
   font-size: 42px;
 }
 
+.dark-bg-wrapper .quote-section cite:first-of-type {
+  font-size: 42px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.dark-bg-wrapper.sponsors-section {
+  background-color: var(--white) !important;
+}
+
+.dark-bg-wrapper.sponsors-section .quote-section blockquote cite {
+  color: var(--primary-100) !important;
+}
+
+#hero-image p.centre-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 
 
 h3 { 
   font-size: 30px;
+
 }
 
 h4 { 
@@ -152,6 +176,18 @@ a.button:hover {
   background: var(--dark)
 }
 
+/* Connect With Us Section - Orange Buttons */
+.card a.button {
+  background-color: var(--orange) !important;
+  border: 2px solid var(--orange) !important;
+  color: var(--white) !important;
+}
+
+.card a.button:hover {
+  opacity: 0.8;
+  background-color: var(--orange) !important;
+}
+
 /* Example: Secondary Button Style */
 a.button-secondary {
   background-color: var(--accent-color);
@@ -172,6 +208,31 @@ a.button-highlight {
 
 
 /* Header styles */
+header {
+  background-color: var(--orange);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px calc(50vw - 50%);
+  box-sizing: border-box;
+}
+
+header a {
+  color: var(--white);
+}
+
+header nav a {
+  color: var(--white);
+}
+
+header nav a.active {
+  border-bottom: 2px solid var(--white);
+  padding-bottom: 2px;
+  color: var(--white);
+}
+
 header img {
   width: 160px;
   /* Try adjusting: width, border-radius for logo styling */
@@ -273,7 +334,7 @@ section p + a.button {
 /* Footer Styles */
 footer {
   width: 100%;
-  background: var(--primary-100);
+  background: var(--orange);
   color: var(--white);
   padding: 40px 20px 20px;
   /* Try customizing: background gradients, text alignment, etc. */
@@ -286,11 +347,11 @@ footer img {
 footer hr {
   margin: 10px 0 20px;
   border: none;
-  border-bottom: 1.5px solid var(--primary-25);
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.3);
 }
 
 footer a, footer p {
-  color: var(--secondary-color);
+  color: var(--white);
   font-size: 12px;
 }
 
@@ -331,14 +392,118 @@ footer nav, footer p {
 .dark-bg-wrapper a.button {
   border: 2px solid var(--white);
   color: var(--white);
+}
+
+/* Events & Shows Section - White Background with Black Text */
+.events-shows-wrapper {
+  background: var(--white);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  box-sizing: border-box;
+}
+
+.events-shows-wrapper h2,
+.events-shows-wrapper h3,
+.events-shows-wrapper h4,
+.events-shows-wrapper p {
+  color: #000000;
+}
+
+.events-shows-wrapper a.button {
+  border: 2px solid #000000;
+  color: #000000;
+}
+
+.events-shows-wrapper img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.events-shows-wrapper .placeholder {
+  max-width: 600px !important;
+  width: 100% !important;
+}
+
+.events-shows-wrapper .desk3 {
+  max-width: 600px;
 } 
 
+/* Photo Gallery Images - Stacked Vertically with Equal Sizes */
+.photo-gallery-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing8x3);
+}
+
+.photo-gallery-images img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Re-imagine Recreate Repeat Section - White Background with Black Text */
+.reimagine-wrapper {
+  background: var(--white);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  box-sizing: border-box;
+}
+
+.reimagine-wrapper h2,
+.reimagine-wrapper h3,
+.reimagine-wrapper h4,
+.reimagine-wrapper p {
+  color: #000000;
+}
+
+.reimagine-wrapper blockquote p {
+  color: #000000 !important;
+  font-style: normal !important;
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+  margin-bottom: var(--spacing8x2);
+}
+
+.reimagine-wrapper cite {
+  color: #000000 !important;
+}
+
+/* Footer - Orange Background with White Text */
+footer {
+  background: var(--orange) !important;
+  color: var(--white) !important;
+}
+
+footer a, footer p {
+  color: var(--white) !important;
+}
+
+footer hr {
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.3);
+}
 
    /* Divider Lines */
 hr {
   border: none;
   border-bottom: 1.5px solid var(--primary-25);
   /* Try adding: margin, different border styles, gradients */
+}
+
+/* Section Divider - Black stroke line */
+.section-divider {
+  border: none;
+  border-bottom: 2px solid #000000;
+  margin: var(--spacing8x3) 0;
+  width: 100%;
 }
 
 /* Icon with Text Component */
@@ -393,6 +558,9 @@ hr {
 .quote-section blockquote {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .quote-section blockquote p {
@@ -408,8 +576,10 @@ hr {
   color: var(--primary-25);
   font-style: normal;
   font-weight: 500;
+  margin-bottom: var(--spacing8x1);
 }
 iframe {
   aspect-ratio: 16 / 9;
   width: 100%; !important;
 }
+.dark-bg-wrapper
