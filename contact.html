@@ -57,18 +57,9 @@
     <!-- Mobile Navigation (styled by framework.css) -->
     <div class="mobile-nav">
       <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <div class="dropdown">
-        <input type="checkbox" id="mobile-dropdown-toggle" class="mobile-dropdown-toggle" />
-        <label for="mobile-dropdown-toggle">Dropdown <i class="fa-solid fa-chevron-down"></i></label>
-        <div class="dropdown-menu">
-          <a href="#">Dropdown Item</a>
-          <a href="#">Dropdown Item</a>
-          <a href="#">Dropdown Item</a>
-        </div>
-      </div>
-      <a href="#">Page</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Join/Contact</a>
       </nav>
     </div>
     
@@ -78,7 +69,7 @@
 
    <!-- Header Section -->
     <header class="grid desktop-nav">
-      <a href="#" class="mobi2 tab2 desk2">
+      <a href="index.html" class="mobi2 tab2 desk2">
         <img src="img/logoLightBG.png" alt="Club Name" />
       </a>
       <nav class="mobi0 tab2 desk2">
@@ -86,18 +77,18 @@
         <div class="dropdown">
           <a href="about.html">About <i class="fa-solid fa-chevron-down"></i></a>
           <div class="dropdown-menu">
-             <a href="#">Quick Up-Cycle Guides</a>
-            <a href="#">Faq</a>
-            <a href="#">Sponsors</a>
+             <a href="about.html#quick">Quick Up-Cycle Guides</a>
+            <a href="about.html#faq">Faq</a>
+            <a href="about.html#sponsors">Sponsors</a>
             
           </div>
         </div>
            <div class="dropdown">
           <a href="contact.html"class="active">Join/Contact <i class="fa-solid fa-chevron-down"></i></a>
           <div class="dropdown-menu">
-            <a href="#">What We Offer</a>
-            <a href="#">Sign Up Forum</a>
-            <a href="#">Connect With Us!</a>
+            <a href="contact.html#what-we-offer">What We Offer</a>
+            <a href="contact.html#sign-up-forum">Sign Up Forum</a>
+            <a href="contact.html#connect-with-us">Connect With Us!</a>
           </div>
         </div>
       </nav>
@@ -113,7 +104,7 @@
     1.1 Become Apart of The Collective!   -->
 
     <section class="full-height" id="hero-image" style="background: none; background-color: var(--white);">
-      <h1>Become Apart of The Collective!</h1>
+      <h1>Become A Part of The Collective!</h1>
       <p>Be part of a community that transforms fashion through creativity, sustainability, and collaboration.</p>
       <span><i class="fa-solid fa-arrow-down"></i></span>
     </section>
@@ -123,7 +114,7 @@
      <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     2.5 What We Offer -->
 
-    <section class="grid">
+    <section id="what-we-offer" class="grid">
       <div class="mobi1 tab8 desk2">
         <h2>What We Offer</h2>
         
@@ -156,14 +147,14 @@
      <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     2.17 Sign Up -->
 
-    <section class="grid">
+    <section id="sign-up-forum" class="grid">
       <div class="mobi0 tab3 desk3"><!-- spacing --></div>
       <div class="mobi1 tab2 desk3 centre-text">
         <h3>Sign Up</h3>
         <p>[Sign up here] </p>
       </div>
       <div class="mobi0 tab3 desk3"><!-- spacing --></div>
-      <div class="mobi1 tab2 desk4 card">
+      <div class="mobi1 tab2 desk3 card">
         <h4>Form Field</h4>
         <div>
           <h5>Name</h5>
@@ -194,18 +185,19 @@
         </div>
         <a class="button" href="#">Submit</a>
       </div>
-      <div class="mobi0 tab3 desk2"><!-- spacing --></div>
-      <div class="mobi1 tab2 desk4">
+      <div class="mobi1 tab2 desk8">
         <picture>
-          <source media="(max-width: 799px)" srcset="img/joinus-mobi.png" />
-          <source media="(min-width: 800px)" srcset="img/joinus-tab.png" />
+          <source media="(max-width: 799px)" srcset="img/joinus.png" />
+          <source media="(min-width: 800px)" srcset="img/joinus.png" />
           <img
             src="img/joinus.png"
             alt="landscape"
             class="placeholder"
+            style="width: 100%; max-width: none; height: 600px; object-fit: cover;"
         />
         </picture>
       </div>
+      <div class="mobi0 tab3 desk1"><!-- spacing --></div>
     </section>
     <hr class="section-divider">
 
@@ -213,7 +205,7 @@
       <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     Connect With Us! -->
 
-    <section class="grid">
+    <section id="connect-with-us" class="grid">
       <div class="mobi1 tab1 desk1">
         <h3>Connect With Us!</h3>
         <p>[Sign up here] to join our mailing list and become part of the Up-Cycle Collective!</p>

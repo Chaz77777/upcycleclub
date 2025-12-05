@@ -46,6 +46,11 @@ Experiment with colors, typography, spacing, and component styles.
 
 }
 
+/* Smooth scrolling for all anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
 
 
 
@@ -95,6 +100,33 @@ h2 {
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
+}
+
+section#hero-image h1,
+section#hero-image p {
+  color: var(--white) !important;
+}
+
+section#hero-image[style*="background-color: var(--white)"] h1,
+section#hero-image[style*="background-color: var(--white)"] p {
+  color: var(--primary-100) !important;
+}
+
+/* Sign up section image sizing */
+.grid picture img.placeholder {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.grid picture {
+  width: 100%;
+}
+
+.mobi1.tab2.desk4 picture img {
+  max-width: 600px;
+  height: auto;
+  width: 100%;
 }
 
 
